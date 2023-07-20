@@ -1,0 +1,564 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 0 9rem;
+  color: #fcfdfe;
+  background-color: #010409;
+}
+
+a{
+  text-decoration: none;
+}
+
+div.navbar{
+  width: 100%;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1.nav-title{
+  font-size: 32px;
+}
+
+div.nav-links{
+  display: flex;
+  gap: 1rem;
+  font-size: 18px;
+}
+
+a.ham{
+  display: none;
+  position: absolute;
+  right: 2.2rem;
+  top: 2.3rem;
+}
+
+a.ham i{
+  font-size: 20px;
+}
+
+div.nav-links a{
+  transition: .3s ease-in-out;
+  padding: .8rem 1rem;
+  color: #fcfdfe;
+}
+
+div.nav-links a:last-child{
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: #010409;
+}
+
+div.nav-links a:hover{
+  transform: translate(0, -5px);
+}
+
+div.nav-links a:last-child:hover{
+  box-shadow: 0 6px 22px #ffffff;
+}
+
+div.hero {
+  display: flex;
+  flex-direction: row;
+  margin: 1.6rem 0.2rem 0;
+  width: 95%;
+  height: 66vh;
+}
+
+div.main {
+  font-size: 30px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+
+div.main h2 {
+  margin-bottom: 2.6rem;
+}
+
+div.main div.title-btns {
+  justify-content: flex-start;
+  display: flex;
+  gap: 1.4rem;
+}
+
+div.main a {
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 18px;
+  color: #fcfdfe;
+  transition: 0.3s ease-in-out;
+  background-color: #01242b;
+  color: #fcfdfe;
+}
+
+div.main a:first-child {
+  background-color: #ffffff;
+  color: #010409;
+  padding: 0.9rem 1.4rem;
+}
+
+div.main a:last-child {
+  border: 2px solid #05b8bb;
+}
+
+div.main a:first-child:hover {
+  box-shadow: 0 6px 22px #ffffff;
+}
+
+div.main a:last-child:hover {
+  box-shadow: 0 6px 22px #05b8bb;
+}
+
+div.main-cards {
+  width: 100%;
+  margin: 13rem 0;
+  position: relative;
+  left: 70px;
+}
+
+div.main-cards div.card {
+  background-color: #01242b;
+  border: 2px solid #05b8bb;
+  height: 16rem;
+  width: 11rem;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+div.main-cards div.card i {
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  font-size: 48px;
+  color: #05b8bb;
+}
+
+div.main-cards div.card:nth-child(1) {
+  position: relative;
+  bottom: 8.75rem;
+  left: 5rem;
+  transform: rotate(-5deg);
+}
+
+div.main-cards div.card:nth-child(2) {
+  position: relative;
+  bottom: 25rem;
+  left: 5.875rem;
+}
+
+div.main-cards div.card:nth-child(3) {
+  position: relative;
+  bottom: 40rem;
+  left: 6.875rem;
+  transform: rotate(5deg);
+}
+
+div.main-cards:hover {
+  transition: 0.3s ease-in-out;
+}
+
+div.main-cards:hover div.card:nth-child(1) {
+  transform: translate(-85px, 10px) rotate(-17deg);
+}
+
+div.main-cards:hover div.card:nth-child(3) {
+  transform: translate(85px, 10px) rotate(17deg);
+}
+
+div.scroll {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0 1.6rem;
+}
+
+div.scroll i {
+  font-size: 22px;
+}
+
+h2.why-title {
+  text-align: center;
+  margin: 4.5rem;
+  font-size: 28px;
+}
+
+div.why-me {
+  width: 100%;
+  background-color: #010409;
+  text-align: center;
+  display: inline-flex;
+}
+div.why-card {
+  height: auto;
+  width: 35%;
+  margin: 0 2rem;
+  padding: 3.4rem 1.6rem;
+  background-color: #01242b;
+  border-radius: 8px;
+  border: 2px solid #05b8bb;
+}
+div.custom-draw i {
+  font-size: 68px;
+  color: #05b8bb;
+}
+div.custom-draw i.fa-gear {
+  font-size: 26px;
+  color: #ffffff;
+}
+div.custom-draw i.fa-gear:nth-child(1) {
+  position: relative;
+  bottom: 5px;
+  left: 16px;
+}
+div.custom-draw i.fa-gear:nth-child(2) {
+  position: relative;
+  top: 15px;
+}
+div.custom-draw i.fa-gear:nth-child(3) {
+  position: relative;
+  right: 6px;
+  top: 21px;
+}
+div.custom-draw i.fa-brain {
+  font-size: 66px;
+  position: relative;
+  bottom: 17px;
+  right: 46px;
+}
+div.why-card h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 3rem 0 2.8rem;
+}
+div.why-card p {
+  font-size: 18px;
+  word-spacing: 1px;
+}
+
+div.faq {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+div.faq h3 {
+  font-size: 26px;
+  margin: 4rem 0 2rem;
+}
+div.faq div.faq-card {
+  background-color: #01242b;
+  padding: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  border-radius: 10px;
+  border: 2px solid #05b8bb;
+}
+div.faq div.faq-card h4 {
+  font-size: 26px;
+  width: auto;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1.4rem;
+}
+div.faq div.faq-card p {
+  font-size: 20px;
+  padding: 0.2rem 1.4rem 1.6rem;
+}
+
+div.journey {
+  margin: 4rem 0;
+  text-align: center;
+}
+div.journey h2 {
+  margin-bottom: 1rem;
+  font-size: 48px;
+}
+div.journey h2 span {
+  background: -webkit-linear-gradient(80deg, #01242b, #05b8bb);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+div.journey p {
+  font-size: 26px;
+  padding: 1.6rem;
+  margin-bottom: 1.8rem;
+}
+div.journey a {
+  background-color: #fcfdfe;
+  color: #010409;
+  font-size: 22px;
+  border-radius: 8px;
+  padding: 0.9rem 2.4rem 0.9rem 2rem;
+  transition: 0.3s ease-in-out;
+}
+div.journey a i {
+  margin-right: 0.4rem;
+}
+div.journey a:hover {
+  box-shadow: 0 6px 22px #fff;
+}
+
+div.footer {
+  background-color: #fcfdfe;
+  margin: 3rem 0;
+  border-radius: 8px;
+}
+div.footer div.footer-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8rem;
+  padding: 5rem 2rem 3.5rem;
+  justify-content: space-evenly;
+}
+div.footer div.footer-info h2 {
+  color: #010409;
+  font-size: 38px;
+}
+div.footer div.footer-info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+div.footer div.footer-info div h3 {
+  color: #010409;
+  font-size: 26px;
+  margin-bottom: 1rem;
+}
+div.footer div.footer-info div a {
+  color: #010409;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+  padding: 0.6rem 0;
+}
+div.footer div.footer-info div a:hover {
+  -webkit-text-decoration: underline 3px #05b8bb;
+          text-decoration: underline 3px #05b8bb;
+  transform: translate(0, -5px);
+}
+div.footer hr {
+  margin: 0 6.2rem;
+  width: auto;
+}
+div.footer div.credits {
+  color: #010409;
+  font-size: 18px;
+  padding: 2.6rem 4rem 4rem;
+}
+div.footer div.credits h4 {
+  margin: 0.6rem 0 0;
+}
+div.footer div.credits h4 a {
+  color: #010409;
+  transition: 0.3s ease-in-out;
+  -webkit-text-decoration: underline 2px #010409;
+          text-decoration: underline 2px #010409;
+}
+div.footer div.credits h4 a:hover {
+  -webkit-text-decoration: underline 4px #05b8bb;
+          text-decoration: underline 4px #05b8bb;
+}
+
+
+
+@media (min-width: 425px) and (max-width: 768px){
+  body {
+    padding: 0 1rem;
+  }
+
+  div.navbar{
+    width: 100%;
+    padding: 2.2rem 1rem;
+  }
+  
+  div.nav-links{
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #01242b;
+    width: 60%;
+    height: 100vh;
+    z-index: 7;
+  }
+
+  div.nav-links a{
+    margin: .6rem 1rem 0;
+  }
+
+  div.nav-links a:first-child{
+    margin-top: 1rem;
+  }
+
+  a.ham{
+    display: flex;
+  }
+
+  div.displayed{
+    display: none;
+  }
+
+  div.hero {
+    flex-direction: column;
+    margin: 1.2rem 0.2rem 0;
+    width: 100%;
+    height: 75vh;
+  }
+
+  div.main {
+    font-size: 28px;
+  }
+
+  div.main h2 {
+    text-align: center;
+  }
+
+  div.main div.title-btns {
+    justify-content: center;
+  }
+
+  div.main-cards {
+    margin: 14rem 0;
+    left: -15px;
+    display: flex;
+  }
+
+  div.main-cards div.card:nth-child(1) {
+    position: relative;
+    bottom: 10.4rem;
+    left: 16.4rem;
+    transform: rotate(-8deg);
+  }
+  
+  div.main-cards div.card:nth-child(2) {
+    position: relative;
+    bottom: 10.5rem;
+    left: 6.4rem;
+  }
+  
+  div.main-cards div.card:nth-child(3) {
+    position: relative;
+    bottom: 10.2rem;
+    left: -3.2rem;
+    transform: rotate(8deg);
+  }
+
+  div.scroll {
+    justify-content: center;
+  }
+
+  h2.why-title{
+    margin: 4.5rem 4.5rem 3.5rem;
+  }
+
+  div.why-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.why-card{
+    width: 90%;
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 425px){
+  body {
+    padding: 0 1rem;
+  }
+
+  div.navbar{
+    width: 100%;
+    padding: 2.2rem 1rem;
+  }
+  
+  div.nav-links{
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #01242b;
+    width: 60%;
+    height: 100vh;
+    z-index: 7;
+  }
+
+  div.nav-links a{
+    margin: .6rem 1rem 0;
+  }
+
+  div.nav-links a:first-child{
+    margin-top: 1rem;
+  }
+
+  a.ham{
+    display: flex;
+  }
+
+  div.displayed{
+    display: none;
+  }
+
+  div.hero {
+    flex-direction: column;
+    margin: 1.2rem 0.2rem 0;
+    width: 100%;
+    height: 70vh;
+  }
+
+  div.main {
+    font-size: 28px;
+  }
+
+  div.main h2 {
+    text-align: center;
+  }
+
+  div.main div.title-btns {
+    justify-content: center;
+  }
+
+  div.main-cards {
+    margin: 14rem 0;
+    left: -15px;
+    display: none;
+  }
+
+  div.scroll {
+    justify-content: center;
+  }
+
+  h2.why-title{
+    margin: 4.5rem 4.5rem 3.5rem;
+  }
+
+  div.why-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.why-card{
+    width: 90%;
+    margin: 1.5rem 0;
+  }
+}
+
+
