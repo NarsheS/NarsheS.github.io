@@ -392,7 +392,7 @@ div.footer div.credits h4 a:hover {
   div.nav-links{
     flex-direction: column;
     position: absolute;
-    top: 15px;
+    top: 0px;
     left: 0px;
     background-color: #01242b;
     width: 60%;
@@ -493,7 +493,7 @@ div.footer div.credits h4 a:hover {
   div.nav-links{
     flex-direction: column;
     position: absolute;
-    top: 15px;
+    top: 0px;
     left: 0px;
     background-color: #01242b;
     width: 60%;
