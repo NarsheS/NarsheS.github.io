@@ -398,6 +398,7 @@ div.footer div.credits h4 a:hover {
     width: 60%;
     height: 100vh;
     z-index: 7;
+    padding: 2.2rem .2rem;
   }
 
   div.nav-links a{
@@ -499,6 +500,7 @@ div.footer div.credits h4 a:hover {
     width: 60%;
     height: 100vh;
     z-index: 7;
+    padding: 2.2rem .2rem;
   }
 
   div.nav-links a{
