@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel - Portfólio</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-slate-900 to-purple-950 min-h-screen">
+
+  <main>
+
+    <!-- HERO -->
+    <section
+      id="hero"
+      class="min-h-screen flex items-center justify-center px-6 pt-5"
+    >
+      <div
+        class="
+          max-w-6xl
+          mx-auto
+          w-full
+          grid
+          md:grid-cols-2
+          gap-16
+          items-center
+        "
+      >
+
+        <!-- Texto -->
+        <div>
+
+          <p
+            class="
+              text-violet-400
+              font-semibold
+              tracking-wider
+              uppercase
+              mb-3
+            "
+          >
+            Desenvolvedor Fullstack
+          </p>
+
+          <h1
+            class="
+              text-6xl
+              md:text-8xl
+              font-bold
+              mb-6
+              leading-tight
+              bg-gradient-to-r
+              from-violet-400
+              to-purple-500
+              bg-clip-text
+              text-transparent
+            "
+          >
+            Gabriel
+          </h1>
+
+          <p
+            class="
+              text-xl
+              md:text-2xl
+              text-slate-300
+              leading-relaxed
+              mb-8
+            "
+          >
+            Desenvolvedor Fullstack especializado em aplicações web e APIs.
+          </p>
+
+          <div
+            class="
+              flex
+              flex-wrap
+              gap-3
+              mb-10
+            "
+          >
+            <span class="badge">
+              TypeScript
+            </span>
+
+            <span class="badge">
+              React
+            </span>
+
+            <span class="badge">
+              NestJS
+            </span>
+
+            <span class="badge">
+              SQL
+            </span>
+
+            <span class="badge">
+              Java
+            </span>
+          </div>
+
+          <div class="flex gap-4">
+
+            <a
+              href="#projects"
+              class="
+                px-6 py-3
+                bg-violet-600
+                hover:bg-violet-500
+                rounded-xl
+                text-white
+                transition
+              "
+            >
+              Ver Projetos
+            </a>
+
+            <a
+              href="https://github.com/NarsheS/"
+              target="_blank"
+              class="
+                px-6 py-3
+                border
+                border-violet-500
+                text-violet-300
+                hover:bg-violet-500/10
+                rounded-xl
+                transition
+              "
+            >
+              GitHub
+            </a>
+
+            <a
+              href="curriculo.pdf"
+              target="_blank"
+              class="
+                px-6 py-3
+                border
+                border-slate-600
+                text-slate-300
+                hover:border-violet-500
+                hover:text-violet-300
+                rounded-xl
+                transition
+              "
+            >
+              Currículo
+            </a>
+
+          </div>
+
+          <div class="mt-16">
+            <a
+              href="#portfolio"
+              class="
+                text-slate-400
+                hover:text-violet-400
+                transition-colors
+                text-2xl
+              "
+            >
+              ↓
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Visual -->
+        <div
+          class="
+            relative
+            hidden
+            md:flex
+            items-center
+            justify-center
+          "
+        >
+
+          <!-- brilho -->
+          <div
+            class="
+              absolute
+              w-[32rem]
+              h-[32rem]
+              bg-violet-500/20
+              rounded-full
+              blur-3xl
+            "
+          ></div>
+
+          <!-- terminal -->
+          <div
+            class="
+              relative
+              w-full
+              max-w-md
+              overflow-hidden
+              rounded-2xl
+              border
+              border-violet-500/20
+              bg-slate-950/80
+              backdrop-blur-sm
+              shadow-2xl
+              h-[90vh]
+            "
+          >
+
+            <!-- barra superior -->
+            <div
+              class="
+                flex
+                items-center
+                gap-2
+                px-4
+                py-3
+                border-b
+                border-violet-500/10
+                bg-slate-900/50
+              "
+            >
+              <div class="w-3 h-3 rounded-full bg-red-400"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+              <div class="w-3 h-3 rounded-full bg-green-400"></div>
+
+              <span
+                class="
+                  ml-3
+                  text-xs
+                  text-slate-400
+                "
+              >
+                developer.sh
+              </span>
+            </div>
+
+            <!-- conteúdo -->
+            <div class="p-6">
+
+              <pre id="terminal" class="text-violet-300 text-sm leading-7 font-mono"></pre>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section
+      id="sobre"
+      class="
+        max-w-6xl
+        mx-auto
+        px-6
+        py-32
+      "
+    >
+      <div
+        class="
+          grid
+          md:grid-cols-2
+          gap-16
+          items-center
+        "
+      >
+
+        <!-- Texto -->
+        <div>
+
+          <p
+            class="
+              text-violet-400
+              uppercase
+              tracking-widest
+              font-semibold
+              mb-4
+            "
+          >
+            Sobre Mim
+          </p>
+
+          <h2
+            class="
+              text-4xl
+              md:text-5xl
+              font-bold
+              text-white
+              mb-8
+              leading-tight
+            "
+          >
+            Desenvolvedor movido por desafios
+          </h2>
+
+          <p
+            class="
+              text-slate-400
+              leading-relaxed
+              text-lg
+              mb-6
+            "
+          >
+            Meu nome é Gabriel, sou desenvolvedor Fullstack com foco em aplicações web, APIs REST e integrações entre serviços. Gosto de transformar requisitos em sistemas organizados, funcionais e fáceis de manter.
+          </p>
+
+          <p
+            class="
+              text-slate-400
+              leading-relaxed
+              text-lg
+            "
+          >
+            Trabalho principalmente com TypeScript, React, Next.js e NestJS, utilizando PostgreSQL em projetos completos. Também tenho experiência com Python, Java, APIs e bancos de dados relacionais, com interesse especial em arquitetura, segurança e sistemas escaláveis.
+          </p>
+
+        </div>
+
+        <!-- Destaques -->
+        <div
+          class="
+            relative
+          "
+        >
+
+          <div
+            class="
+              absolute
+              inset-0
+              bg-violet-500/10
+              blur-3xl
+            "
+          ></div>
+
+          <div
+            class="
+              relative
+              border
+              border-violet-500/20
+              rounded-3xl
+              p-8
+              bg-slate-900/40
+              backdrop-blur-sm
+            "
+          >
+
+            <h3
+              class="
+                text-white
+                text-2xl
+                font-semibold
+                mb-8
+              "
+            >
+              Princípios de desenvolvimento
+            </h3>
+
+            <div class="space-y-5">
+
+              <div class="flex items-center gap-3">
+                <span class="text-violet-400">✓</span>
+                <span class="text-slate-300">
+                  Código limpo e de fácil manutenção
+                </span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <span class="text-violet-400">✓</span>
+                <span class="text-slate-300">
+                  Arquiteturas escaláveis
+                </span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <span class="text-violet-400">✓</span>
+                <span class="text-slate-300">
+                  Experiência do usuário como prioridade
+                </span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <span class="text-violet-400">✓</span>
+                <span class="text-slate-300">
+                  Segurança e boas práticas
+                </span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <span class="text-violet-400">✓</span>
+                <span class="text-slate-300">
+                  Aprendizado contínuo
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section
+      id="projects"
+      class="
+        max-w-6xl
+        mx-auto
+        px-6
+        py-24
+      "
+    >
+
+      <!-- Título -->
+      <div class="mb-12">
+
+        <p
+          class="
+            text-violet-400
+            uppercase
+            tracking-widest
+            font-semibold
+            mb-4
+          "
+        >
+          Projetos
+        </p>
+
+        <h2
+          class="
+            text-4xl
+            md:text-5xl
+            font-bold
+            text-white
+          "
+        >
+          Projetos em destaque
+        </h2>
+
+      </div>
+
+      <!-- Abas -->
+      <div class="flex flex-wrap gap-2 mb-1">
+
+        <button
+          class="tab active-tab px-6 py-3 rounded-t-xl font-semibold transition-all duration-200"
+          data-target="ecommerce"
+        >
+          E-commerce
+        </button>
+
+        <button
+          class="tab inactive-tab px-6 py-3 rounded-t-xl font-semibold transition-all duration-200"
+          data-target="real-state"
+        >
+          Real-State tracker
+        </button>
+
+        
+
+      </div>
+
+      <!-- Container -->
+      <div
+        class="
+          border
+          border-violet-500/20
+          bg-slate-900/40
+          shadow-[0_0_40px_rgba(139,92,246,0.08)]
+          backdrop-blur-sm
+          rounded-b-3xl
+          rounded-tr-3xl
+          overflow-hidden
+        "
+      >
+
+        <!-- Projeto 1 -->
+        <div id="ecommerce" class="card p-10">
+
+          <div
+            class="
+              grid
+              md:grid-cols-2
+              gap-10
+              items-center
+            "
+          >
+
+            <div>
+
+              <h3
+                class="
+                  text-3xl
+                  font-bold
+                  text-white
+                  mb-4
+                "
+              >
+                MyStore
+              </h3>
+
+              <p
+                class="
+                  text-slate-400
+                  leading-relaxed
+                  mb-6
+                "
+              >
+                Sistema completo de vendas online com
+                autenticação, catálogo de produtos,
+                carrinho de compras, painel administrativo
+                e integração com meios de pagamento via Stripe.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-8">
+
+                <span class="badge">
+                  Next.js
+                </span>
+
+                <span class="badge">
+                  NestJS
+                </span>
+
+                <span class="badge">
+                  PostgreSQL
+                </span>
+
+                <span class="badge">
+                  TypeScript
+                </span>
+
+              </div>
+
+              <div class="mb-8">
+                <p class="text-white font-semibold mb-3">Destaques técnicos</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="tech-badge">JWT + Refresh Token</span>
+                  <span class="tech-badge">Stripe Webhooks</span>
+                  <span class="tech-badge">Controle de estoque</span>
+                  <span class="tech-badge">Painel administrativo</span>
+                  <span class="tech-badge">Cloudinary</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+
+                <a
+                  href="https://ecommerce-kappa-orpin-25.vercel.app/"
+                  target="_blank"
+                  class="
+                    px-5 py-3
+                    bg-violet-600
+                    rounded-xl
+                    text-white
+                  "
+                >
+                  Demo
+                </a>
+
+                <a
+                  href="https://github.com/NarsheS/ecommerce"
+                  target="_blank"
+                  class="
+                    px-5 py-3
+                    border
+                    border-violet-500
+                    rounded-xl
+                    text-violet-300
+                  "
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+            <!-- Preview -->
+            <div
+              class="
+                h-64
+                rounded-2xl
+                bg-gradient-to-br
+                from-violet-500/20
+                to-purple-500/20
+                border
+                border-violet-500/20
+                flex
+                items-center
+                justify-center
+              "
+            >
+
+              <img src="public/e-commerce01.png" alt="preview e-commerce">
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Projeto 2 -->
+        <div id="real-state" class="card hidden p-10">
+
+          <h3
+            class="
+              text-3xl
+              font-bold
+              text-white
+              mb-4
+            "
+          >
+            Real-State Tracker
+          </h3>
+
+          <p class="text-slate-400 leading-relaxed">
+            Em desenvolvimento
+
+            Sistema de monitoramento de preços de imóveis desenvolvido com Python, FastAPI e SQLite, com coleta de anúncios e histórico de preços.
+          </p>
+
+        </div>
+
+        
+
+      </div>
+
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section
+      id="tecnologias"
+      class="
+        max-w-6xl
+        mx-auto
+        px-6
+        py-32
+      "
+    >
+
+      <!-- Título -->
+      <div class="text-center mb-16">
+
+        <p
+          class="
+            text-violet-400
+            uppercase
+            tracking-widest
+            font-semibold
+            mb-4
+          "
+        >
+          Tecnologias
+        </p>
+
+        <h2
+          class="
+            text-4xl
+            md:text-5xl
+            font-bold
+            text-white
+            mb-6
+          "
+        >
+          Stack e experiência técnica
+        </h2>
+
+        <p
+          class="
+            text-slate-400
+            max-w-2xl
+            mx-auto
+            text-lg
+          "
+        >
+          Tecnologias utilizadas no desenvolvimento
+          de aplicações web, mobile e APIs modernas.
+        </p>
+
+      </div>
+
+      <!-- Stack principal -->
+      <div class="mb-8 p-8 rounded-3xl border border-violet-500/20 bg-slate-900/40 backdrop-blur-sm">
+        <h3 class="text-2xl font-bold text-white mb-4">Stack principal</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="tech-badge">TypeScript</span>
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">Next.js</span>
+          <span class="tech-badge">NestJS</span>
+          <span class="tech-badge">PostgreSQL</span>
+        </div>
+        <p class="text-slate-400 mt-5 leading-relaxed">
+          Também trabalho com Java, Spring Boot, Python, FastAPI, React Native,
+          Flutter e outras tecnologias conforme a necessidade do projeto.
+        </p>
+      </div>
+
+      <!-- Grid -->
+      <div
+        class="
+          grid
+          md:grid-cols-2
+          gap-8
+        "
+      >
+
+        <!-- Frontend -->
+        <div
+          class="
+            p-8
+            rounded-3xl
+            border
+            border-violet-500/20
+            bg-slate-900/40
+            backdrop-blur-sm
+          "
+        >
+
+          <h3
+            class="
+              text-2xl
+              font-bold
+              text-white
+              mb-6
+            "
+          >
+            Frontend
+          </h3>
+
+          <div class="flex flex-wrap gap-3">
+
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Next.js</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">Vue</span>
+            <span class="tech-badge">Tailwind</span>
+            <span class="tech-badge">Bootstrap</span>
+
+          </div>
+
+        </div>
+
+        <!-- Backend -->
+        <div
+          class="
+            p-8
+            rounded-3xl
+            border
+            border-violet-500/20
+            bg-slate-900/40
+            backdrop-blur-sm
+          "
+        >
+
+          <h3
+            class="
+              text-2xl
+              font-bold
+              text-white
+              mb-6
+            "
+          >
+            Backend
+          </h3>
+
+          <div class="flex flex-wrap gap-3">
+
+            <span class="tech-badge">NestJS</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">Spring Boot</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">REST API</span>
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">JWT</span>
+
+          </div>
+
+        </div>
+
+        <!-- Mobile -->
+        <div
+          class="
+            p-8
+            rounded-3xl
+            border
+            border-violet-500/20
+            bg-slate-900/40
+            backdrop-blur-sm
+          "
+        >
+
+          <h3
+            class="
+              text-2xl
+              font-bold
+              text-white
+              mb-6
+            "
+          >
+            Mobile
+          </h3>
+
+          <div class="flex flex-wrap gap-3">
+
+            <span class="tech-badge">React Native</span>
+            <span class="tech-badge">Expo</span>
+            <span class="tech-badge">Flutter</span>
+            <span class="tech-badge">Android Studio</span>
+
+          </div>
+
+        </div>
+
+        <!-- Banco de Dados -->
+        <div
+          class="
+            p-8
+            rounded-3xl
+            border
+            border-violet-500/20
+            bg-slate-900/40
+            backdrop-blur-sm
+          "
+        >
+
+          <h3
+            class="
+              text-2xl
+              font-bold
+              text-white
+              mb-6
+            "
+          >
+            Banco de Dados
+          </h3>
+
+          <div class="flex flex-wrap gap-3">
+
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">SQL Server</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Firebase</span>
+            <span class="tech-badge">Supabase</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Metodologias -->
+      <div
+        class="
+          mt-8
+          p-8
+          rounded-3xl
+          border
+          border-violet-500/20
+          bg-slate-900/40
+          backdrop-blur-sm
+        "
+      >
+
+        <h3
+          class="
+            text-2xl
+            font-bold
+            text-white
+            mb-6
+          "
+        >
+          Metodologias
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="tech-badge">Scrum</span>
+          <span class="tech-badge">Kanban</span>
+          <span class="tech-badge">XP</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section
+      id="contato"
+      class="
+        max-w-6xl
+        mx-auto
+        px-6
+        py-32
+      "
+    >
+
+      <div
+        class="
+          relative
+          overflow-hidden
+          rounded-3xl
+          border
+          border-violet-500/20
+          bg-slate-900/40
+          backdrop-blur-sm
+          p-12
+          md:p-16
+        "
+      >
+
+        <!-- Glow -->
+        <div
+          class="
+            absolute
+            inset-0
+            bg-violet-500/10
+            blur-3xl
+          "
+        ></div>
+
+        <div class="relative z-10">
+
+          <p
+            class="
+              text-violet-400
+              uppercase
+              tracking-widest
+              font-semibold
+              mb-4
+            "
+          >
+            Contato
+          </p>
+
+          <h2
+            class="
+              text-4xl
+              md:text-5xl
+              font-bold
+              text-white
+              mb-6
+            "
+          >
+            Vamos construir algo juntos?
+          </h2>
+
+          <p
+            class="
+              text-slate-400
+              text-lg
+              leading-relaxed
+              max-w-2xl
+              mb-12
+            "
+          >
+            Estou disponível para oportunidades profissionais,
+            desenvolvimento de projetos e colaborações técnicas.
+            Se você tem uma ideia, uma vaga ou simplesmente quer
+            trocar experiências, ficarei feliz em conversar.
+          </p>
+
+          <div
+            class="
+              grid
+              md:grid-cols-3
+              gap-6
+            "
+          >
+
+            <!-- Email -->
+            <a
+              href="mailto:narsheehsran@gmail.com"
+              class="
+                p-6
+                rounded-2xl
+                border
+                border-violet-500/20
+                bg-slate-950/50
+                hover:border-violet-500/50
+                transition-all
+              "
+            >
+
+              <h3
+                class="
+                  text-white
+                  font-semibold
+                  mb-2
+                "
+              >
+                Email
+              </h3>
+
+              <p class="text-slate-400">
+                narsheehsran@gmail.com
+              </p>
+
+            </a>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/NarsheS"
+              target="_blank"
+              class="
+                p-6
+                rounded-2xl
+                border
+                border-violet-500/20
+                bg-slate-950/50
+                hover:border-violet-500/50
+                transition-all
+              "
+            >
+
+              <h3
+                class="
+                  text-white
+                  font-semibold
+                  mb-2
+                "
+              >
+                GitHub
+              </h3>
+
+              <p class="text-slate-400">
+                github.com/NarsheS
+              </p>
+
+            </a>
+            <a
+              href="public/curriculo.pdf"
+              target="_blank"
+              class="
+                p-6
+                rounded-2xl
+                border
+                border-violet-500/20
+                bg-slate-950/50
+                hover:border-violet-500/50
+                transition-all
+              "
+            >
+              <h3 class="text-white font-semibold mb-2">Currículo</h3>
+              <p class="text-slate-400">Visualizar currículo</p>
+            </a>
+
+
+            
+
+          </div>
+
+          
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="
+        py-12
+        text-center
+        border-t
+        border-violet-500/10
+      "
+    >
+      <p class="text-slate-500">
+        © 2026 Gabriel Gonçalves. Todos os direitos reservados.
+      </p>
+    </footer>
+    
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

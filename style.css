@@ -1,0 +1,95 @@
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Hero */
+#hero {
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+#hero.show {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+}
+
+.badge{
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: rgba(139, 92, 246, 0.2);
+  color: rgb(196, 181, 253);
+}
+
+/* Tecs */
+.tech-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  color: #c4b5fd;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+  transform: translateY(-2px);
+  border-color: rgba(139, 92, 246, 0.5);
+  background: rgba(139, 92, 246, 0.25);
+}
+
+/* Tabs */
+
+.active-tab {
+  background-color: #e5e7eb;
+  color: #111827;
+  transform: translateY(2px);
+}
+
+.inactive-tab {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.inactive-tab:hover {
+  background-color: #8b5cf6;
+}
+
+.tab {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Cursor piscando do terminal */
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Melhor aparência em telas pequenas */
+
+@media (max-width: 768px) {
+  #hero h1 {
+    line-height: 1.1;
+  }
+}
