@@ -55,19 +55,20 @@ const terminal = document.getElementById("terminal");
 
 const terminalText = `> profile
 
-Fullstack Developer
+Full-Stack Developer
 
-> expertise
+> stack
 
-✓ Frontend Development
-✓ Backend Development
-✓ Database Design
+✓ TypeScript
+✓ React / Next.js
+✓ Node.js / NestJS
+✓ PostgreSQL
 
-> currently_building
+> building
 
-✓ E-commerce Platforms
-✓ Mobile Applications
+✓ E-commerce Applications
 ✓ REST APIs
+✓ Full-Stack Projects
 
 Ready `;
 
