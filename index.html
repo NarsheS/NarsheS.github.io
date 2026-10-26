@@ -3,409 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriel - Portfólio</title>
+  <title>Gabriel Gonçalves | Desenvolvedor Júnior e TI</title>
+  <meta name="description" content="Portfólio de Gabriel Gonçalves: desenvolvedor júnior (React, Next.js, NestJS) com experiência em suporte técnico e sistemas operacionais.">
+  <meta name="theme-color" content="#0f172a">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gradient-to-br from-gray-900 via-slate-900 to-purple-950 min-h-screen">
+<body class="bg-gradient-to-br from-gray-900 via-slate-900 to-purple-950 min-h-screen text-slate-200">
+
+  <a href="#sobre" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-violet-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">
+    Pular para o conteúdo
+  </a>
+
+  <!-- MENU -->
+  <header class="sticky top-0 z-40 border-b border-violet-500/10 bg-slate-950/70 backdrop-blur">
+    <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Principal">
+
+      <a href="#inicio" class="font-semibold text-white">Gabriel Gonçalves</a>
+
+      <ul class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+        <li><a href="#sobre" class="hover:text-violet-300 transition-colors">Sobre</a></li>
+        <li><a href="#projetos" class="hover:text-violet-300 transition-colors">Projetos</a></li>
+        <li><a href="#competencias" class="hover:text-violet-300 transition-colors">Competências</a></li>
+        <li><a href="#trajetoria" class="hover:text-violet-300 transition-colors">Trajetória</a></li>
+        <li><a href="#contato" class="hover:text-violet-300 transition-colors">Contato</a></li>
+      </ul>
+
+      <a
+        href="public/curriculo.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="px-4 py-2 text-sm rounded-lg border border-violet-500/60 text-violet-200 hover:bg-violet-500/10 transition"
+      >
+        Currículo
+      </a>
+
+    </nav>
+  </header>
 
   <main>
 
     <!-- HERO -->
-    <section
-      id="hero"
-      class="min-h-screen flex items-center justify-center px-6 pt-5"
-    >
-      <div
-        class="
-          max-w-6xl
-          mx-auto
-          w-full
-          grid
-          md:grid-cols-2
-          gap-16
-          items-center
-        "
-      >
+    <section id="inicio" class="min-h-[calc(100vh-4rem)] flex items-center px-6 py-16">
+      <div class="hero-rise max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
 
         <!-- Texto -->
         <div>
 
-          <p
-            class="
-              text-violet-400
-              font-semibold
-              tracking-wider
-              uppercase
-              mb-3
-            "
-          >
-            Desenvolvedor Full-Stack Júnior
-          </p>
-
-          <h1
-            class="
-              text-6xl
-              md:text-8xl
-              font-bold
-              mb-6
-              leading-tight
-              bg-gradient-to-r
-              from-violet-400
-              to-purple-500
-              bg-clip-text
-              text-transparent
-            "
-          >
-            Gabriel
+          <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-4">
+            Gabriel Gonçalves
           </h1>
 
-          <p
-            class="
-              text-xl
-              md:text-2xl
-              text-slate-300
-              leading-relaxed
-              mb-8
-            "
-          >
-            Construo aplicações web completas, de Front-end à API e persistência de dados.
+          <p class="text-xl md:text-2xl text-violet-300 font-medium mb-6">
+            Desenvolvedor Júnior e profissional de TI
           </p>
 
-          <div
-            class="
-              flex
-              flex-wrap
-              gap-3
-              mb-10
-            "
-          >
-            <span class="badge">
-              TypeScript
-            </span>
+          <p class="text-lg text-slate-300 leading-relaxed max-w-xl mb-6">
+            Desenvolvo aplicações web e mobile e também atuo com suporte técnico:
+            instalação e formatação de sistemas operacionais, configuração de
+            software e diagnóstico de problemas.
+          </p>
 
-            <span class="badge">
-              React
-            </span>
+          <p class="text-slate-400 max-w-xl mb-8">
+            Busco vaga como Desenvolvedor Júnior, Analista de Suporte ou Analista de TI Júnior.
+          </p>
 
-            <span class="badge">
-              Next.js
-            </span>
-
-            <span class="badge">
-              Node.js
-            </span>
-
-            <span class="badge">
-              NestJS
-            </span>
-
-            <span class="badge">
-              PostgreSQL
-            </span>
-          </div>
-
-          <div class="flex gap-4">
-
+          <div class="flex flex-wrap gap-3 mb-10">
             <a
-              href="#projects"
-              class="
-                px-6 py-3
-                bg-violet-600
-                hover:bg-violet-500
-                rounded-xl
-                text-white
-                transition
-              "
+              href="#projetos"
+              class="px-6 py-3 bg-violet-600 hover:bg-violet-500 rounded-xl text-white font-medium transition"
             >
-              Ver Projetos
-            </a>
-
-            <a
-              href="https://github.com/NarsheS/"
-              target="_blank"
-              class="
-                px-6 py-3
-                border
-                border-violet-500
-                text-violet-300
-                hover:bg-violet-500/10
-                rounded-xl
-                transition
-              "
-            >
-              GitHub
+              Ver projeto em destaque
             </a>
 
             <a
               href="public/curriculo.pdf"
               target="_blank"
-              class="
-                px-6 py-3
-                border
-                border-slate-600
-                text-slate-300
-                hover:border-violet-500
-                hover:text-violet-300
-                rounded-xl
-                transition
-              "
+              rel="noopener noreferrer"
+              class="px-6 py-3 border border-violet-500 text-violet-200 hover:bg-violet-500/10 rounded-xl transition"
             >
-              Currículo
+              Abrir currículo
             </a>
 
-          </div>
-
-          <div class="mt-16">
             <a
-              href="#portfolio"
-              class="
-                text-slate-400
-                hover:text-violet-400
-                transition-colors
-                text-2xl
-              "
+              href="https://github.com/NarsheS/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-6 py-3 border border-slate-600 text-slate-300 hover:border-violet-500 hover:text-violet-200 rounded-xl transition"
             >
-              ↓
+              GitHub
             </a>
           </div>
+
+          <ul class="flex flex-wrap gap-2" aria-label="Principais tecnologias">
+            <li class="chip">TypeScript</li>
+            <li class="chip">React</li>
+            <li class="chip">Next.js</li>
+            <li class="chip">Node.js</li>
+            <li class="chip">NestJS</li>
+            <li class="chip">PostgreSQL</li>
+            <li class="chip">Suporte técnico</li>
+          </ul>
 
         </div>
 
-        <!-- Visual -->
-        <div
-          class="
-            relative
-            hidden
-            md:flex
-            items-center
-            justify-center
-          "
-        >
+        <!-- Terminal (decorativo: o mesmo conteúdo está no texto ao lado) -->
+        <div class="relative hidden md:flex items-center justify-center" aria-hidden="true">
 
-          <!-- brilho -->
-          <div
-            class="
-              absolute
-              w-[32rem]
-              h-[32rem]
-              bg-violet-500/20
-              rounded-full
-              blur-3xl
-            "
-          ></div>
+          <div class="absolute w-[28rem] h-[28rem] bg-violet-500/20 rounded-full blur-3xl"></div>
 
-          <!-- terminal -->
-          <div
-            class="
-              relative
-              w-full
-              max-w-md
-              overflow-hidden
-              rounded-2xl
-              border
-              border-violet-500/20
-              bg-slate-950/80
-              backdrop-blur-sm
-              shadow-2xl
-              h-[90vh]
-            "
-          >
+          <div class="relative w-full max-w-md overflow-hidden rounded-2xl border border-violet-500/20 bg-slate-950/80 backdrop-blur-sm shadow-2xl">
 
-            <!-- barra superior -->
-            <div
-              class="
-                flex
-                items-center
-                gap-2
-                px-4
-                py-3
-                border-b
-                border-violet-500/10
-                bg-slate-900/50
-              "
-            >
+            <div class="flex items-center gap-2 px-4 py-3 border-b border-violet-500/10 bg-slate-900/50">
               <div class="w-3 h-3 rounded-full bg-red-400"></div>
               <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
               <div class="w-3 h-3 rounded-full bg-green-400"></div>
-
-              <span
-                class="
-                  ml-3
-                  text-xs
-                  text-slate-400
-                "
-              >
-                developer.sh
-              </span>
+              <span class="ml-3 text-xs text-slate-400">gabriel@portfolio</span>
             </div>
 
-            <!-- conteúdo -->
             <div class="p-6">
-
-              <pre id="terminal" class="text-violet-300 text-sm leading-7 font-mono"></pre>
-
+              <pre id="terminal" class="text-sm leading-7 min-h-[25rem] whitespace-pre-wrap"></pre>
             </div>
 
           </div>
-
         </div>
 
       </div>
     </section>
 
     <!-- SOBRE -->
-    <section
-      id="sobre"
-      class="
-        max-w-6xl
-        mx-auto
-        px-6
-        py-32
-      "
-    >
-      <div
-        class="
-          grid
-          md:grid-cols-2
-          gap-16
-          items-center
-        "
-      >
+    <section id="sobre" class="max-w-6xl mx-auto px-6 py-24">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
 
-        <!-- Texto -->
         <div>
-
-          <p
-            class="
-              text-violet-400
-              uppercase
-              tracking-widest
-              font-semibold
-              mb-4
-            "
-          >
-            Sobre Mim
-          </p>
-
-          <h2
-            class="
-              text-4xl
-              md:text-5xl
-              font-bold
-              text-white
-              mb-8
-              leading-tight
-            "
-          >
-            Desenvolvedor movido por desafios
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
+            Do código ao suporte, com atenção aos detalhes
           </h2>
 
-          <p
-            class="
-              text-slate-400
-              leading-relaxed
-              text-lg
-              mb-6
-            "
-          >
-            Sou desenvolvedor Full-Stack Júnior com foco em aplicações web e APIs REST. Trabalho principalmente com TypeScript, React, Next.js e NestJS, buscando transformar requisitos em sistemas funcionais, organizados e fáceis de manter.
+          <p class="text-slate-300 leading-relaxed text-lg mb-6 max-w-prose">
+            Estudo Desenvolvimento Full-Stack na Estácio e já construí projetos completos,
+            da interface à API, passando por autenticação, banco de dados e regras de negócio.
           </p>
 
-          <p
-            class="
-              text-slate-400
-              leading-relaxed
-              text-lg
-            "
-          >
-            Tenho experiência prática desenvolvendo projetos completos, trabalhando desde a construção das interfaces até a implementação das APIs, autenticação, persistência de dados e regras de negócio.
+          <p class="text-slate-300 leading-relaxed text-lg max-w-prose">
+            Também tenho prática com instalação, formatação e configuração de sistemas
+            operacionais. Venho de um hospital, onde precisão em processos e trabalho sob
+            pressão fazem parte da rotina, e levo esse cuidado para a tecnologia.
           </p>
-
         </div>
 
-        <!-- Destaques -->
-        <div
-          class="
-            relative
-          "
-        >
+        <div class="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
 
-          <div
-            class="
-              absolute
-              inset-0
-              bg-violet-500/10
-              blur-3xl
-            "
-          ></div>
+          <div class="panel p-6">
+            <h3 class="text-xl font-semibold text-white mb-4">Desenvolvimento</h3>
+            <ul class="check-list space-y-3 text-slate-300">
+              <li>Aplicações web e mobile</li>
+              <li>APIs REST e autenticação</li>
+              <li>Banco de dados SQL e noSQL</li>
+              <li>Código organizado e fácil de manter</li>
+            </ul>
+          </div>
 
-          <div
-            class="
-              relative
-              border
-              border-violet-500/20
-              rounded-3xl
-              p-8
-              bg-slate-900/40
-              backdrop-blur-sm
-            "
-          >
-
-            <h3
-              class="
-                text-white
-                text-2xl
-                font-semibold
-                mb-8
-              "
-            >
-              Forma de trabalhar
-            </h3>
-
-            <div class="space-y-5">
-
-              <div class="flex items-center gap-3">
-                <span class="text-violet-400">✓</span>
-                <span class="text-slate-300">
-                  Código organizado e fácil de manter
-                </span>
-              </div>
-
-              <div class="flex items-center gap-3">
-                <span class="text-violet-400">✓</span>
-                <span class="text-slate-300">
-                  Separação entre Front-end e Back-end
-                </span>
-              </div>
-
-              <div class="flex items-center gap-3">
-                <span class="text-violet-400">✓</span>
-                <span class="text-slate-300">
-                  APIs REST e integração entre serviços
-                </span>
-              </div>
-
-              <div class="flex items-center gap-3">
-                <span class="text-violet-400">✓</span>
-                <span class="text-slate-300">
-                  Atenção à segurança e autenticação
-                </span>
-              </div>
-
-              <div class="flex items-center gap-3">
-                <span class="text-violet-400">✓</span>
-                <span class="text-slate-300">
-                  Aprendizado e evolução contínuos
-                </span>
-              </div>
-
-            </div>
-
+          <div class="panel p-6">
+            <h3 class="text-xl font-semibold text-white mb-4">Suporte e TI</h3>
+            <ul class="check-list space-y-3 text-slate-300">
+              <li>Instalação e formatação de SO</li>
+              <li>Configuração de software e drivers</li>
+              <li>Manutenção básica de computadores</li>
+              <li>Diagnóstico de problemas</li>
+            </ul>
           </div>
 
         </div>
@@ -414,730 +188,274 @@
     </section>
 
     <!-- PROJETOS -->
-    <section
-      id="projects"
-      class="
-        max-w-6xl
-        mx-auto
-        px-6
-        py-24
-      "
-    >
+    <section id="projetos" class="max-w-6xl mx-auto px-6 py-24">
 
-      <!-- Título -->
-      <div class="mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-12">Projetos</h2>
 
-        <p
-          class="
-            text-violet-400
-            uppercase
-            tracking-widest
-            font-semibold
-            mb-4
-          "
-        >
-          Projetos
+      <!-- Projeto em destaque -->
+      <article class="panel p-8 md:p-10 shadow-[0_0_40px_rgba(139,92,246,0.10)]">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+
+          <div>
+            <span class="status status-featured mb-4">Em destaque</span>
+
+            <h3 class="text-3xl font-bold text-white mb-4">
+              E-commerce Full-Stack (MyStore)
+            </h3>
+
+            <p class="text-slate-300 leading-relaxed mb-6">
+              Aplicação completa de e-commerce com Next.js e NestJS, integrando autenticação,
+              gerenciamento de produtos, carrinho, pedidos, controle de estoque e pagamentos
+              com Stripe.
+            </p>
+
+            <ul class="flex flex-wrap gap-2 mb-8" aria-label="Tecnologias do projeto">
+              <li class="chip">Next.js</li>
+              <li class="chip">NestJS</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">TypeScript</li>
+            </ul>
+
+            <p class="text-white font-semibold mb-3">O que o projeto tem</p>
+            <ul class="check-list grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-sm text-slate-300 mb-8">
+              <li>JWT com refresh token</li>
+              <li>API REST</li>
+              <li>Stripe e webhooks</li>
+              <li>Controle de estoque</li>
+              <li>Painel administrativo</li>
+              <li>Imagens com Cloudinary</li>
+            </ul>
+
+            <div class="flex flex-wrap gap-3">
+              <a
+                href="https://ecommerce-kappa-orpin-25.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-5 py-3 bg-violet-600 hover:bg-violet-500 rounded-xl text-white font-medium transition"
+              >
+                Ver demonstração
+              </a>
+
+              <a
+                href="https://github.com/NarsheS/ecommerce"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-5 py-3 border border-violet-500 text-violet-200 hover:bg-violet-500/10 rounded-xl transition"
+              >
+                Ver código
+              </a>
+            </div>
+          </div>
+
+          <!-- Prévia -->
+          <div class="aspect-video overflow-hidden rounded-2xl border border-violet-500/20 bg-gradient-to-br from-violet-500/20 to-purple-500/20">
+            <img
+              src="public/e-commerce01.png"
+              alt="Página inicial da loja MyStore, projeto de e-commerce"
+              class="w-full h-full object-cover object-top"
+              loading="lazy"
+            >
+          </div>
+
+        </div>
+      </article>
+
+      <!-- Projeto secundário -->
+      <article class="panel p-8 mt-8">
+        <span class="status status-wip mb-4">Em desenvolvimento</span>
+
+        <h3 class="text-2xl font-bold text-white mb-3">Real Estate Tracker</h3>
+
+        <p class="text-slate-300 leading-relaxed mb-6 max-w-prose">
+          Sistema para monitorar preços de imóveis, com coleta de anúncios, histórico de
+          preços e acompanhamento das variações ao longo do tempo.
         </p>
 
-        <h2
-          class="
-            text-4xl
-            md:text-5xl
-            font-bold
-            text-white
-          "
-        >
-          Projetos em destaque
-        </h2>
-
-      </div>
-
-      <!-- Abas -->
-      <div class="flex flex-wrap gap-2 mb-1">
-
-        <button
-          class="tab active-tab px-6 py-3 rounded-t-xl font-semibold transition-all duration-200"
-          data-target="ecommerce"
-        >
-          E-commerce
-        </button>
-
-        <button
-          class="tab inactive-tab px-6 py-3 rounded-t-xl font-semibold transition-all duration-200"
-          data-target="real-state"
-        >
-          Real Estate Tracker
-        </button>
-
-        
-
-      </div>
-
-      <!-- Container -->
-      <div
-        class="
-          border
-          border-violet-500/20
-          bg-slate-900/40
-          shadow-[0_0_40px_rgba(139,92,246,0.08)]
-          backdrop-blur-sm
-          rounded-b-3xl
-          rounded-tr-3xl
-          overflow-hidden
-        "
-      >
-
-        <!-- Projeto 1 -->
-        <div id="ecommerce" class="card p-10">
-
-          <div
-            class="
-              grid
-              md:grid-cols-2
-              gap-10
-              items-center
-            "
-          >
-
-            <div>
-
-              <h3
-                class="
-                  text-3xl
-                  font-bold
-                  text-white
-                  mb-4
-                "
-              >
-                E-commerce Full-Stack (MyStore)
-              </h3>
-
-              <p
-                class="
-                  text-slate-400
-                  leading-relaxed
-                  mb-6
-                "
-              >
-                Aplicação completa de e-commerce desenvolvida com Next.js e NestJS, integrando autenticação, gerenciamento de produtos, carrinho, pedidos, controle de estoque e pagamentos com Stripe.
-              </p>
-
-              <div class="flex flex-wrap gap-2 mb-8">
-
-                <span class="badge">
-                  Next.js
-                </span>
-
-                <span class="badge">
-                  NestJS
-                </span>
-
-                <span class="badge">
-                  PostgreSQL
-                </span>
-
-                <span class="badge">
-                  TypeScript
-                </span>
-
-              </div>
-
-              <div class="mb-6">
-
-                <p class="text-white font-semibold mb-3">
-                  Destaques
-                </p>
-
-                <div class="grid grid-cols-2 gap-x-4 gap-y-2">
-
-                  <div class="flex items-center gap-2">
-                    <span class="text-violet-400 text-sm">✓</span>
-                    <span class="text-slate-400 text-sm">
-                      JWT + Refresh Token
-                    </span>
-                  </div>
-
-                  <div class="flex items-center gap-2">
-                    <span class="text-violet-400 text-sm">✓</span>
-                    <span class="text-slate-400 text-sm">
-                      API REST
-                    </span>
-                  </div>
-
-                  <div class="flex items-center gap-2">
-                    <span class="text-violet-400 text-sm">✓</span>
-                    <span class="text-slate-400 text-sm">
-                      Stripe + Webhooks
-                    </span>
-                  </div>
-
-                  <div class="flex items-center gap-2">
-                    <span class="text-violet-400 text-sm">✓</span>
-                    <span class="text-slate-400 text-sm">
-                      Controle de estoque
-                    </span>
-                  </div>
-
-                  <div class="flex items-center gap-2">
-                    <span class="text-violet-400 text-sm">✓</span>
-                    <span class="text-slate-400 text-sm">
-                      Painel administrativo
-                    </span>
-                  </div>
-
-                  <div class="flex items-center gap-2">
-                    <span class="text-violet-400 text-sm">✓</span>
-                    <span class="text-slate-400 text-sm">
-                      Cloudinary
-                    </span>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="flex gap-4">
-
-                <a
-                  href="https://ecommerce-kappa-orpin-25.vercel.app/"
-                  target="_blank"
-                  class="
-                    px-5 py-3
-                    bg-violet-600
-                    rounded-xl
-                    text-white
-                  "
-                >
-                  Demo
-                </a>
-
-                <a
-                  href="https://github.com/NarsheS/ecommerce"
-                  target="_blank"
-                  class="
-                    px-5 py-3
-                    border
-                    border-violet-500
-                    rounded-xl
-                    text-violet-300
-                  "
-                >
-                  GitHub
-                </a>
-
-              </div>
-
-            </div>
-
-            <!-- Preview -->
-            <div
-              class="
-                h-64
-                rounded-2xl
-                bg-gradient-to-br
-                from-violet-500/20
-                to-purple-500/20
-                border
-                border-violet-500/20
-                flex
-                items-center
-                justify-center
-              "
-            >
-
-              <img src="public/e-commerce01.png" alt="preview e-commerce">
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- Projeto 2 -->
-        <div id="real-state" class="card hidden p-10">
-
-          <h3
-            class="
-              text-3xl
-              font-bold
-              text-white
-              mb-4
-            "
-          >
-            Real Estate Tracker
-          </h3>
-
-          <h4 class="text-slate-400 leading-relaxed mb-6">
-            <strong>Em desenvolvimento</strong>
-          </h4>
-
-          <p class="text-slate-400 leading-relaxed mb-6">
-            Sistema em desenvolvimento para monitoramento de preços de imóveis, com coleta de anúncios, histórico de preços e acompanhamento das variações ao longo do tempo.
-          </p>
-
-          <div class="flex flex-wrap gap-2 mb-8">
-
-            <span class="badge">
-              Python
-            </span>
-
-            <span class="badge">
-              FastAPI
-            </span>
-
-            <span class="badge">
-              SQLAlchemy
-            </span>
-
-          </div>
-
-        </div>
-
-        
-
-        
-
-      </div>
+        <ul class="flex flex-wrap gap-2" aria-label="Tecnologias do projeto">
+          <li class="chip">Python</li>
+          <li class="chip">FastAPI</li>
+          <li class="chip">SQLAlchemy</li>
+        </ul>
+      </article>
 
     </section>
 
-    <!-- TECNOLOGIAS -->
-    <section
-      id="tecnologias"
-      class="
-        max-w-6xl
-        mx-auto
-        px-6
-        py-32
-      "
-    >
+    <!-- COMPETÊNCIAS -->
+    <section id="competencias" class="max-w-6xl mx-auto px-6 py-24">
 
-      <!-- Título -->
-      <div class="text-center mb-16">
-
-        <p
-          class="
-            text-violet-400
-            uppercase
-            tracking-widest
-            font-semibold
-            mb-4
-          "
-        >
-          Tecnologias
-        </p>
-
-        <h2
-          class="
-            text-4xl
-            md:text-5xl
-            font-bold
-            text-white
-            mb-6
-          "
-        >
-          Tecnologias que ultilizo
-        </h2>
-
-        <p
-          class="
-            text-slate-400
-            max-w-2xl
-            mx-auto
-            text-lg
-          "
-        >
-          Tecnologias utilizadas no desenvolvimento
-          de aplicações web, mobile e APIs modernas.
-        </p>
-
-      </div>
-
-      <!-- Stack principal -->
-      <div class="mb-8 p-8 rounded-3xl border border-violet-500/20 bg-slate-900/40 backdrop-blur-sm">
-        <h3 class="text-2xl font-bold text-white mb-4">Stack principal</h3>
-        <div class="flex flex-wrap gap-3">
-          <span class="tech-badge">TypeScript</span>
-          <span class="tech-badge">React</span>
-          <span class="tech-badge">Next.js</span>
-          <span class="tech-badge">Node.js</span>
-          <span class="tech-badge">NestJS</span>
-          <span class="tech-badge">PostgreSQL</span>
-        </div>
-        <p class="text-slate-400 mt-5 leading-relaxed">
-          Possuo conhecimentos em outras tecnologias também, como por exemplo, spring boot e fast API que são ultilizados conforme a necessidade do projeto.
+      <div class="mb-12 max-w-2xl">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Competências</h2>
+        <p class="text-slate-400 text-lg">
+          Tecnologias para desenvolver aplicações e as habilidades de suporte que uso no dia a dia.
         </p>
       </div>
 
-      <!-- Grid -->
-      <div
-        class="
-          grid
-          md:grid-cols-2
-          gap-8
-        "
-      >
+      <div class="grid md:grid-cols-2 gap-6">
 
-        <!-- Frontend -->
-        <div
-          class="
-            p-8
-            rounded-3xl
-            border
-            border-violet-500/20
-            bg-slate-900/40
-            backdrop-blur-sm
-          "
-        >
-
-          <h3
-            class="
-              text-2xl
-              font-bold
-              text-white
-              mb-6
-            "
-          >
-            Frontend
-          </h3>
-
-          <div class="flex flex-wrap gap-3">
-
-            <span class="tech-badge">React</span>
-            <span class="tech-badge">Next.js</span>
-            <span class="tech-badge">Vite</span>
-            <span class="tech-badge">TypeScript</span>
-            <span class="tech-badge">Tailwind CSS</span>
-
-          </div>
-
+        <div class="panel p-7">
+          <h3 class="text-xl font-semibold text-white mb-5">Front-end</h3>
+          <ul class="flex flex-wrap gap-2">
+            <li class="chip">HTML</li>
+            <li class="chip">CSS</li>
+            <li class="chip">JavaScript</li>
+            <li class="chip">TypeScript</li>
+            <li class="chip">React</li>
+            <li class="chip">Next.js</li>
+            <li class="chip">Vite</li>
+            <li class="chip">Tailwind CSS</li>
+          </ul>
         </div>
 
-        <!-- Backend -->
-        <div
-          class="
-            p-8
-            rounded-3xl
-            border
-            border-violet-500/20
-            bg-slate-900/40
-            backdrop-blur-sm
-          "
-        >
-
-          <h3
-            class="
-              text-2xl
-              font-bold
-              text-white
-              mb-6
-            "
-          >
-            Backend
-          </h3>
-
-          <div class="flex flex-wrap gap-3">
-
-            <span class="tech-badge">Node.js</span>
-            <span class="tech-badge">NestJS</span>
-            <span class="tech-badge">REST API</span>
-            <span class="tech-badge">JWT</span>
-
-          </div>
-
+        <div class="panel p-7">
+          <h3 class="text-xl font-semibold text-white mb-5">Back-end e dados</h3>
+          <ul class="flex flex-wrap gap-2">
+            <li class="chip">Node.js</li>
+            <li class="chip">NestJS</li>
+            <li class="chip">APIs REST</li>
+            <li class="chip">JWT</li>
+            <li class="chip">SQL</li>
+            <li class="chip">PostgreSQL</li>
+            <li class="chip">noSQL</li>
+          </ul>
         </div>
 
-        <!-- Mobile -->
-        <div
-          class="
-            p-8
-            rounded-3xl
-            border
-            border-violet-500/20
-            bg-slate-900/40
-            backdrop-blur-sm
-          "
-        >
-
-          <h3
-            class="
-              text-2xl
-              font-bold
-              text-white
-              mb-6
-            "
-          >
-            Mobile
-          </h3>
-
-          <div class="flex flex-wrap gap-3">
-
-            <span class="tech-badge">React Native</span>
-            <span class="tech-badge">Expo</span>
-
-          </div>
-
+        <div class="panel p-7 md:col-span-2 border-violet-400/40">
+          <h3 class="text-xl font-semibold text-white mb-5">Suporte e infraestrutura</h3>
+          <ul class="check-list grid sm:grid-cols-2 gap-x-8 gap-y-3 text-slate-300">
+            <li>Instalação e formatação de sistemas operacionais (Windows ou Linux)</li>
+            <li>Configuração de software e drivers</li>
+            <li>Manutenção básica de computadores</li>
+            <li>Diagnóstico e resolução de problemas</li>
+          </ul>
         </div>
 
-        <!-- Complementar -->
-        <div
-          class="
-            p-8
-            rounded-3xl
-            border
-            border-violet-500/20
-            bg-slate-900/40
-            backdrop-blur-sm
-          "
-        >
+        <div class="panel p-7">
+          <h3 class="text-xl font-semibold text-white mb-5">Mobile</h3>
+          <ul class="flex flex-wrap gap-2">
+            <li class="chip">React Native</li>
+            <li class="chip">Expo</li>
+            <li class="chip">Android Studio</li>
+          </ul>
+        </div>
 
-          <h3
-            class="
-              text-2xl
-              font-bold
-              text-white
-              mb-6
-            "
-          >
-            Complementar
-          </h3>
-
-          <div class="flex flex-wrap gap-3">
-
-            <span class="tech-badge">Java</span>
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">PHP</span>
-
-          </div>
-
+        <div class="panel p-7">
+          <h3 class="text-xl font-semibold text-white mb-5">Outras linguagens e ferramentas</h3>
+          <ul class="flex flex-wrap gap-2">
+            <li class="chip">Java</li>
+            <li class="chip">Python</li>
+            <li class="chip">PHP</li>
+            <li class="chip">Git</li>
+            <li class="chip">Postman</li>
+            <li class="chip">Fundamentos de AWS</li>
+          </ul>
+          <p class="text-slate-400 text-sm mt-5 leading-relaxed">
+            Também tenho conhecimento em Spring Boot e FastAPI, usados conforme a necessidade do projeto.
+          </p>
         </div>
 
       </div>
+    </section>
 
-      <!-- Ferramentas -->
-      <div
-        class="
-          mt-8
-          p-8
-          rounded-3xl
-          border
-          border-violet-500/20
-          bg-slate-900/40
-          backdrop-blur-sm
-        "
-      >
+    <!-- TRAJETÓRIA -->
+    <section id="trajetoria" class="max-w-6xl mx-auto px-6 py-24">
 
-        <h3
-          class="
-            text-2xl
-            font-bold
-            text-white
-            mb-6
-          "
-        >
-          Ferramentas
-        </h3>
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-12">Trajetória</h2>
 
-        <div class="flex flex-wrap gap-3">
+      <div class="grid md:grid-cols-2 gap-6">
 
-          <span class="tech-badge">Git</span>
-          <span class="tech-badge">Postman</span>
+        <div class="panel p-7">
+          <h3 class="text-xl font-semibold text-white mb-1">Experiência</h3>
+          <p class="text-violet-300 mb-5">Farmácia, Hospital Márcio Cunha I</p>
+          <ul class="check-list space-y-3 text-slate-300">
+            <li>Controle, armazenamento e liberação de medicamentos e equipamentos hospitalares, incluindo setores críticos.</li>
+            <li>Rigor em processos, conferência de informações e rastreabilidade, em ambiente de alto impacto e pressão.</li>
+          </ul>
+        </div>
 
+        <div class="panel p-7">
+          <h3 class="text-xl font-semibold text-white mb-1">Formação</h3>
+          <p class="text-violet-300 mb-5">Faculdade Estácio, Desenvolvimento Full-Stack (2023 a 2026)</p>
+          <p class="text-white font-medium mb-3">Cursos complementares</p>
+          <ul class="check-list space-y-2 text-slate-300 text-sm">
+            <li>Full-Stack Web Development Bootcamp (Dr. Angela Wu)</li>
+            <li>freeCodeCamp: Responsive Web Design, Front-end Development Libraries, JavaScript Algorithms and Data Structures e Back-end Development and APIs</li>
+            <li>Computação em Nuvem (AWS)</li>
+          </ul>
+          <p class="text-slate-400 text-sm mt-5">Idiomas: português e inglês.</p>
         </div>
 
       </div>
-
     </section>
 
     <!-- CONTATO -->
-    <section
-      id="contato"
-      class="
-        max-w-6xl
-        mx-auto
-        px-6
-        py-32
-      "
-    >
+    <section id="contato" class="max-w-6xl mx-auto px-6 py-24">
 
-      <div
-        class="
-          relative
-          overflow-hidden
-          rounded-3xl
-          border
-          border-violet-500/20
-          bg-slate-900/40
-          backdrop-blur-sm
-          p-12
-          md:p-16
-        "
-      >
+      <div class="panel relative overflow-hidden p-10 md:p-14">
 
-        <!-- Glow -->
-        <div
-          class="
-            absolute
-            inset-0
-            bg-violet-500/10
-            blur-3xl
-          "
-        ></div>
+        <div class="absolute inset-0 bg-violet-500/10 blur-3xl" aria-hidden="true"></div>
 
         <div class="relative z-10">
 
-          <p
-            class="
-              text-violet-400
-              uppercase
-              tracking-widest
-              font-semibold
-              mb-4
-            "
-          >
-            Contato
-          </p>
-
-          <h2
-            class="
-              text-4xl
-              md:text-5xl
-              font-bold
-              text-white
-              mb-6
-            "
-          >
-            Vamos construir algo juntos?
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+            Vamos conversar?
           </h2>
 
-          <p
-            class="
-              text-slate-400
-              text-lg
-              leading-relaxed
-              max-w-2xl
-              mb-12
-            "
-          >
-            Estou disponível para oportunidades profissionais,
-            desenvolvimento de projetos e colaborações técnicas.
-            Se você tem uma ideia, uma vaga ou simplesmente quer
-            trocar experiências, ficarei feliz em conversar.
+          <p class="text-slate-300 text-lg leading-relaxed max-w-2xl mb-10">
+            Estou disponível para vagas de desenvolvimento, suporte e TI em início de carreira.
+            Se você tem uma oportunidade ou quer trocar uma ideia, me escreva.
           </p>
 
-          <div
-            class="
-              grid
-              md:grid-cols-3
-              gap-6
-            "
-          >
+          <div class="grid md:grid-cols-3 gap-5">
 
-            <!-- Email -->
             <a
               href="mailto:narsheehsran@gmail.com"
-              class="
-                p-6
-                rounded-2xl
-                border
-                border-violet-500/20
-                bg-slate-950/50
-                hover:border-violet-500/50
-                transition-all
-              "
+              class="flex items-start gap-4 p-6 rounded-2xl border border-violet-500/20 bg-slate-950/50 hover:border-violet-500/60 transition"
             >
-
-              <h3
-                class="
-                  text-white
-                  font-semibold
-                  mb-2
-                "
-              >
-                Email
-              </h3>
-
-              <p class="text-slate-400">
-                narsheehsran@gmail.com
-              </p>
-
+              <i data-lucide="mail" class="w-5 h-5 mt-1 text-violet-300 shrink-0"></i>
+              <span>
+                <span class="block text-white font-semibold mb-1">E-mail</span>
+                <span class="block text-slate-300 break-all">narsheehsran@gmail.com</span>
+              </span>
             </a>
 
-            <!-- GitHub -->
             <a
               href="https://github.com/NarsheS"
               target="_blank"
-              class="
-                p-6
-                rounded-2xl
-                border
-                border-violet-500/20
-                bg-slate-950/50
-                hover:border-violet-500/50
-                transition-all
-              "
+              rel="noopener noreferrer"
+              class="flex items-start gap-4 p-6 rounded-2xl border border-violet-500/20 bg-slate-950/50 hover:border-violet-500/60 transition"
             >
-
-              <h3
-                class="
-                  text-white
-                  font-semibold
-                  mb-2
-                "
-              >
-                GitHub
-              </h3>
-
-              <p class="text-slate-400">
-                github.com/NarsheS
-              </p>
-
+              <i data-lucide="github" class="w-5 h-5 mt-1 text-violet-300 shrink-0"></i>
+              <span>
+                <span class="block text-white font-semibold mb-1">GitHub</span>
+                <span class="block text-slate-300">github.com/NarsheS</span>
+              </span>
             </a>
+
             <a
               href="public/curriculo.pdf"
               target="_blank"
-              class="
-                p-6
-                rounded-2xl
-                border
-                border-violet-500/20
-                bg-slate-950/50
-                hover:border-violet-500/50
-                transition-all
-              "
+              rel="noopener noreferrer"
+              class="flex items-start gap-4 p-6 rounded-2xl border border-violet-500/20 bg-slate-950/50 hover:border-violet-500/60 transition"
             >
-              <h3 class="text-white font-semibold mb-2">Currículo</h3>
-              <p class="text-slate-400">Visualizar currículo</p>
+              <i data-lucide="file-text" class="w-5 h-5 mt-1 text-violet-300 shrink-0"></i>
+              <span>
+                <span class="block text-white font-semibold mb-1">Currículo</span>
+                <span class="block text-slate-300">Abrir em PDF</span>
+              </span>
             </a>
-
-
-            
 
           </div>
 
-          
-
         </div>
-
       </div>
 
     </section>
 
-    <!-- FOOTER -->
-    <footer
-      class="
-        py-12
-        text-center
-        border-t
-        border-violet-500/10
-      "
-    >
-      <p class="text-slate-500">
-        © 2026 Gabriel Gonçalves. Todos os direitos reservados.
-      </p>
-    </footer>
-    
-
   </main>
+
+  <footer class="py-10 text-center border-t border-violet-500/10">
+    <p class="text-slate-400 text-sm">© 2026 Gabriel Gonçalves</p>
+  </footer>
 
   <script src="script.js"></script>
 

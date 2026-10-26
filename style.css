@@ -1,95 +1,141 @@
-/* Scroll suave */
+/* ============================================================
+   Portfólio - Gabriel Gonçalves
+   Tailwind cuida do layout; este arquivo guarda só o que não
+   dá para (ou não vale a pena) fazer com utilitários.
+   ============================================================ */
+
+:root {
+  --violet: #8b5cf6;
+  --violet-soft: #c4b5fd;
+  --line: rgba(139, 92, 246, 0.22);
+  --surface: rgba(15, 23, 42, 0.55);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-button {
-    cursor: pointer;
+body {
+  font-family: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Hero */
-#hero {
-  opacity: 0;
-  transform: translateY(80px);
+/* Âncoras não ficam escondidas atrás do menu fixo */
+section[id] {
+  scroll-margin-top: 4.5rem;
 }
 
-#hero.show {
-  opacity: 1;
-  transform: translateY(0);
-
-  transition:
-    opacity 0.9s ease,
-    transform 0.9s ease;
+button,
+a {
+  cursor: pointer;
 }
 
-.badge{
-  padding: 0.25rem 0.75rem;
+/* Foco visível para quem navega pelo teclado */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--violet-soft);
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+/* Cartões e painéis */
+.panel {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  backdrop-filter: blur(6px);
+  border-radius: 1.5rem;
+}
+
+/* Etiquetas de tecnologia */
+.chip {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
   border-radius: 9999px;
-  background-color: rgba(139, 92, 246, 0.2);
-  color: rgb(196, 181, 253);
+  background: rgba(139, 92, 246, 0.14);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  color: var(--violet-soft);
+  font-size: 0.9rem;
 }
 
-/* Tecs */
-.tech-badge {
-  padding: 0.5rem 1rem;
+/* Etiqueta de status (Em destaque / Em desenvolvimento) */
+.status {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
   border-radius: 9999px;
-  background: rgba(139, 92, 246, 0.15);
-  border: 1px solid rgba(139, 92, 246, 0.2);
-  color: #c4b5fd;
-  font-size: 0.95rem;
-  transition: all 0.2s ease;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.status-featured {
+  background: var(--violet);
+  color: #fff;
+}
+.status-wip {
+  border: 1px solid rgba(250, 204, 21, 0.5);
+  color: #fde68a;
 }
 
-.tech-badge:hover {
-  transform: translateY(-2px);
-  border-color: rgba(139, 92, 246, 0.5);
-  background: rgba(139, 92, 246, 0.25);
+/* Lista com marcador ✓ */
+.check-list li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--violet-soft);
 }
 
-/* Tabs */
-
-.active-tab {
-  background-color: #e5e7eb;
-  color: #111827;
-  transform: translateY(2px);
+/* Entrada do hero: o único movimento "por conta própria" da página */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.inactive-tab {
-  background-color: #7c3aed;
-  color: white;
+.hero-rise {
+  animation: rise 0.9s ease both;
 }
 
-.inactive-tab:hover {
-  background-color: #8b5cf6;
+/* Terminal */
+#terminal {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
-
-.tab {
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
+#terminal .t-cmd {
+  color: #e9d5ff;
 }
-
-/* Cursor piscando do terminal */
+#terminal .t-out {
+  color: var(--violet-soft);
+}
 
 .cursor {
   animation: blink 1s infinite;
 }
 
 @keyframes blink {
-  0%, 50% {
-    opacity: 1;
-  }
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
 
-  51%, 100% {
-    opacity: 0;
+/* Telas pequenas */
+@media (max-width: 768px) {
+  #inicio h1 {
+    line-height: 1.05;
   }
 }
 
-/* Melhor aparência em telas pequenas */
-
-@media (max-width: 768px) {
-  #hero h1 {
-    line-height: 1.1;
+/* Respeita quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .hero-rise,
+  .cursor {
+    animation: none;
   }
 }

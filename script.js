@@ -1,46 +1,5 @@
 // =========================
-// Hero Animation
-// =========================
-
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    document
-      .getElementById("hero")
-      .classList.add("show");
-  }, 150);
-});
-
-// =========================
-// Tabs
-// =========================
-
-const tabs = document.querySelectorAll(".tab");
-const cards = document.querySelectorAll(".card");
-
-tabs.forEach(tab => {
-  tab.addEventListener("click", () => {
-    const target = tab.dataset.target;
-
-    cards.forEach(card => {
-      card.classList.add("hidden");
-    });
-
-    tabs.forEach(btn => {
-      btn.classList.remove("active-tab");
-      btn.classList.add("inactive-tab");
-    });
-
-    document
-      .getElementById(target)
-      .classList.remove("hidden");
-
-    tab.classList.remove("inactive-tab");
-    tab.classList.add("active-tab");
-  });
-});
-
-// =========================
-// Lucide Icons
+// Ícones (Lucide)
 // =========================
 
 if (window.lucide) {
@@ -53,44 +12,53 @@ if (window.lucide) {
 
 const terminal = document.getElementById("terminal");
 
-const terminalText = `> profile
+const terminalLines = [
+  { text: "> whoami", cls: "t-cmd" },
+  { text: "Gabriel Gonçalves, desenvolvedor júnior e TI", cls: "t-out" },
+  { text: "", cls: "t-out" },
+  { text: "> skills --desenvolvimento", cls: "t-cmd" },
+  { text: "React, Next.js, TypeScript", cls: "t-out" },
+  { text: "Node.js, NestJS, PostgreSQL", cls: "t-out" },
+  { text: "", cls: "t-out" },
+  { text: "> skills --suporte", cls: "t-cmd" },
+  { text: "Instalação e formatação de SO", cls: "t-out" },
+  { text: "Configuração de software e drivers", cls: "t-out" },
+  { text: "Diagnóstico de problemas", cls: "t-out" },
+  { text: "", cls: "t-out" },
+  { text: "> status", cls: "t-cmd" },
+  { text: "Disponível para novas oportunidades", cls: "t-out" },
+];
 
-Full-Stack Developer
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-> stack
+async function runTerminal() {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-✓ TypeScript
-✓ React / Next.js
-✓ Node.js / NestJS
-✓ PostgreSQL
+  for (const line of terminalLines) {
+    const row = document.createElement("span");
+    row.className = `${line.cls} block min-h-[1.75rem]`;
+    terminal.appendChild(row);
 
-> building
-
-✓ E-commerce Applications
-✓ REST APIs
-✓ Full-Stack Projects
-
-Ready `;
-
-function typeTerminal(text, speed = 30) {
-  let index = 0;
-
-  function type() {
-    if (index < text.length) {
-      terminal.textContent += text.charAt(index);
-      index++;
-
-      setTimeout(type, speed);
-    } else {
-      terminal.innerHTML += '<span class="cursor">_</span>';
+    if (reduceMotion) {
+      row.textContent = line.text;
+      continue;
     }
+
+    for (const char of line.text) {
+      row.textContent += char;
+      await sleep(22);
+    }
+
+    // pausa um pouco mais depois de cada comando
+    await sleep(line.cls === "t-cmd" ? 350 : 80);
   }
 
-  type();
+  const cursor = document.createElement("span");
+  cursor.className = "cursor t-out";
+  cursor.textContent = "_";
+  terminal.lastElementChild.appendChild(cursor);
 }
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    typeTerminal(terminalText);
-  }, 700);
-});
+if (terminal) {
+  setTimeout(runTerminal, 600);
+}
